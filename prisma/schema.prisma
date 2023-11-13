@@ -15,6 +15,6 @@ model Issue {
   Title      String   @db.VarChar(255)
   Decription String   @db.NVarChar(1000)
   Status     String   @default("0")
-  createdAt  DateTime @default(now())
-  updatedAt  DateTime @updatedAt
+  CreatedAt  DateTime @default(now())
+  UpdatedAt  DateTime @updatedAt
 }

@@ -8,8 +8,8 @@ CREATE TABLE [dbo].[Issue] (
     [Title] VARCHAR(255) NOT NULL,
     [Decription] NVARCHAR(1000) NOT NULL,
     [Status] NVARCHAR(1000) NOT NULL CONSTRAINT [Issue_Status_df] DEFAULT '0',
-    [createdAt] DATETIME2 NOT NULL CONSTRAINT [Issue_createdAt_df] DEFAULT CURRENT_TIMESTAMP,
-    [updatedAt] DATETIME2 NOT NULL,
+    [CreatedAt] DATETIME2 NOT NULL CONSTRAINT [Issue_CreatedAt_df] DEFAULT CURRENT_TIMESTAMP,
+    [UpdatedAt] DATETIME2 NOT NULL,
     CONSTRAINT [Issue_pkey] PRIMARY KEY CLUSTERED ([Id])
 );
 
